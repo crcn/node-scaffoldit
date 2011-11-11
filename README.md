@@ -1,3 +1,25 @@
+### Example
+
+```javascript
+
+var scaffolding = require('scaffolding');
+
+
+scaffolding({
+	params: {
+		name: "What is your name?",
+		address: "What is your address?",
+		hasDog: "(confirm) Do you have a dog?"
+	},
+	build: function(ops)
+	{
+		console.log(ops.name);
+		console.log(ops.address);
+		console.log(ops.hasDog);//true
+	}
+});
+
+````
 
 ### Types of inputs
 
@@ -70,25 +92,3 @@ scaffolding({
 })
 
 
-### Example
-
-```javascript
-
-var scaffolding = require('scaffolding');
-
-
-scaffolding({
-	params: {
-		name: "What is your name?",
-		address: "What is your address?",
-		hasDog: "(confirm) Do you have a dog?"
-	},
-	build: function(ops)
-	{
-		console.log(ops.name);
-		console.log(ops.address);
-		console.log(ops.hasDog);//true
-	}
-});
-
-````
