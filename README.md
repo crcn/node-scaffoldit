@@ -6,7 +6,7 @@ var scaffolding = require('scaffolding');
 
 
 scaffolding({
-	params: {
+	input: {
 		name: "What is your name?",
 		address: "What is your address?",
 		hasDog: "(confirm) Do you have a dog?"
@@ -28,7 +28,7 @@ You can easily specify the type of input by adding `(type-of-input)` before the 
 ````javascript
 
 scaffolding({
-	params: {
+	input: {
 		username: "(prompt) Username:",
 		password: "(password) Password:",
 		hasFriends: "(confirm) Do you have any friends?"
@@ -46,7 +46,7 @@ scaffolding({
 
 scaffolding({
 	
-	params: {
+	input: {
 		projectName: {
 			msg: "What is your project name?",
 			default: function(params, callback)
@@ -83,7 +83,7 @@ Or if your lazy like me, you can do something like this:
 
 
 scaffolding({
-	params: {
+	input: {
 		projectName: "What is your project name?",
 		_src: "Where is your project located?",
 		_dest: "Where do you want to write the project to?",

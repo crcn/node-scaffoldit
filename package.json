@@ -11,8 +11,11 @@
     "node": "~0.6.0"
   },
   "dependencies": {
-   	"mustache":"*",
-        "celeri":"*"
+   	  "mustache":"*",
+      "celeri":"*",
+      "step":"*"
    },
-  "devDependencies": {}
+  "devDependencies": {},
+  "main": "./lib/index.js"
+  
 }

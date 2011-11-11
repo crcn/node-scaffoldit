@@ -1,13 +1,12 @@
-var scaffold = require('../scaffold');
+var scaffolding = require('../');
 
 
 
-scaffold({
-	params: {
+scaffolding({
+	input: {
 		'name': 'What is your name?',
-		''
+		'hasDog': '(confirm) Do you have a dog?'
 	},
-	//prepare: function(){}
 	build: function(ops)
 	{
 		
