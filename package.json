@@ -1,0 +1,18 @@
+{
+  "author": "Craig Condon",
+  "name": "scaffold",
+  "description": "scaffolding library for node.js",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/spiceapps/scaffold.git"
+  },
+  "engines": {
+    "node": "~0.6.0"
+  },
+  "dependencies": {
+   	"mustache":"*",
+        "celeri":"*"
+   },
+  "devDependencies": {}
+}
