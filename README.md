@@ -1,9 +1,8 @@
 
+### What's this?
 
-![Alt example](http://i.imgur.com/3Q9Fa.png)
+A library which allows to you very easily take input from a user, and use that data to build stuff. Like so: 
 
-
-### Example
 
 ```javascript
 
@@ -34,6 +33,10 @@ scaffoldit({
 });
 
 ````
+
+Gives you something like: 
+
+![Alt example](http://i.imgur.com/3Q9Fa.png)
 
 
 ### scaffoldit(ops)
