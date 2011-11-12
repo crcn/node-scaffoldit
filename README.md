@@ -16,7 +16,7 @@ scaffoldit({
 	 */
 	
 	params: {
-		'_src': __dirname + '/tpl/hello.tpl.txt'
+		'_src': __dirname + '/tpl/hello.mu.txt'
 	},
 	
 	/**
@@ -55,7 +55,7 @@ scaffoldit({
 
 ````
 
-With the [mustache](https://github.com/janl/mustache.js) template content of:
+The hello.mu.txt [mustache](https://github.com/janl/mustache.js) template looks like:
 
 
 ````text
@@ -72,7 +72,7 @@ You do NOT have a dog.
 
 ````
 
-Gives you something like: 
+And the result is: 
 
 ![Alt example](http://i.imgur.com/3Q9Fa.png)
 
@@ -136,7 +136,7 @@ scaffoldit({
 
 ### scaffoldit.fromDir(params, src, dest)
 
-Scans the target directory for [mustache](https://github.com/janl/mustache.js) template files, and replaces any template variables with the parameters given. The destination is where the files are written to. Make sure to set the *name* of the template file to something like `my-file.tpl.html`, or `my-file.mu.html`.
+Scans the target directory for [mustache](https://github.com/janl/mustache.js) templates, and replaces any template variables with the parameters given. The destination is where the files are written to. Make sure to set the *name* of the template file to something like `my-file.tpl.html`, or `my-file.mu.html`.
 
 Note that `tpl`, and `mu` are removed in the destination file.
 
