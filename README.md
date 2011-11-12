@@ -125,7 +125,7 @@ scaffoldit({
 			}
 		},
 		projectSrc: {
-			msg: "What is your project located?",
+			msg: "Where is your project located?",
 			default: '/usr/local/bin'
 		}
 	}
