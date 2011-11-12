@@ -1,18 +1,5 @@
 
-
-### scaffoldit(ops)
-
-Options include:
-
-- `params` - Default parameter values to pass onto the build callback.
-- `input` - Inputs that require a value from the user.
-	- `[param_name]` - The parameter name for the given input.
-		- `msg` - The message to display to the user.
-		- `default` - The optional default value to use for the param. Can be a value, or callback.
-- `build` - The build function for the parameters given.
-- `complete` - Called once the build is complete.
-
-Here's a basic example
+### Example
 
 ```javascript
 
@@ -40,6 +27,20 @@ scaffoldit({
 });
 
 ````
+
+
+### scaffoldit(ops)
+
+Options include:
+
+- `params` - Default parameter values to pass onto the build callback.
+- `input` - Inputs that require a value from the user.
+	- `[param_name]` - The parameter name for the given input.
+		- `msg` - The message to display to the user.
+		- `default` - The optional default value to use for the param. Can be a value, or callback.
+- `build` - The build function for the parameters given.
+- `complete` - Called once the build is complete.
+
 
 ### Types of inputs
 
@@ -107,6 +108,7 @@ scaffoldit({
 
 Or you can do something like this:
 
+````javascript
 
 scaffoldit({
 	params: {
@@ -121,6 +123,8 @@ scaffoldit({
 		//...
 	}
 });
+
+````
 
 ### scaffoldit.fromFile(params, templateSrc, callback)
 
