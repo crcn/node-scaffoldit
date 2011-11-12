@@ -10,9 +10,19 @@ var scaffoldit = require('../');
 require('colors');
 
 scaffoldit({
+	
+	/**
+	 * another place to put default values
+	 */
+	
 	params: {
 		'_src': __dirname + '/tpl/hello.txt'
 	},
+	
+	/**
+	 * input required by the user
+	 */
+	
 	input: {
 		'name': {
 			msg: 'What is your name?',
@@ -20,12 +30,23 @@ scaffoldit({
 		},
 		'hasDog': '(confirm) Do you have a dog?'
 	},
+	
+	/**
+	 * called after gathering *all* input data - 
+	 * builds the stuff
+	 */
+	
 	build: function(ops, next) {
 		
 		console.log('Building template...'.grey);
 		
 		scaffoldit.fromFile(ops, next);
 	},
+	
+	/**
+	 * called after the entire build process is complete
+	 */
+	
 	complete: function(err, result) {
 		
 		console.log(result.green);
