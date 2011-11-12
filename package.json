@@ -1,6 +1,6 @@
 {
   "author": "Craig Condon",
-  "name": "scaffold",
+  "name": "scaffoldit",
   "description": "scaffolding library for node.js",
   "version": "0.0.1",
   "repository": {
@@ -13,7 +13,9 @@
   "dependencies": {
    	  "mustache":"*",
       "celeri":"*",
-      "step":"*"
+      "step":"*",
+	  "findit":"*",
+	  "mkdirp": "*"
    },
   "devDependencies": {},
   "main": "./lib/index.js"

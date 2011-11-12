@@ -1,21 +1,41 @@
-### Example
+
+
+### scaffoldit(ops)
+
+Options include:
+
+- `params` - Default parameter values to pass onto the build callback.
+- `input` - Inputs that require a value from the user.
+	- `[param_name]` - The parameter name for the given input.
+		- `msg` - The message to display to the user.
+		- `default` - The optional default value to use for the param. Can be a value, or callback.
+- `build` - The build function for the parameters given.
+- `complete` - Called once the build is complete.
+
+Here's a basic example
 
 ```javascript
 
-var scaffolding = require('scaffolding');
+var scaffoldit = require('scaffoldit');
 
 
-scaffolding({
+scaffoldit({
 	input: {
 		name: "What is your name?",
 		address: "What is your address?",
 		hasDog: "(confirm) Do you have a dog?"
 	},
-	build: function(ops)
+	build: function(ops, next)
 	{
 		console.log(ops.name);
 		console.log(ops.address);
 		console.log(ops.hasDog);//true
+		
+		next();
+	},
+	complete: function()
+	{
+		
 	}
 });
 
@@ -27,7 +47,7 @@ You can easily specify the type of input by adding `(type-of-input)` before the 
 
 ````javascript
 
-scaffolding({
+scaffoldit({
 	input: {
 		username: "(prompt) Username:",
 		password: "(password) Password:",
@@ -44,13 +64,13 @@ scaffolding({
 
 ````javascript
 
-scaffolding({
+scaffoldit({
 	
 	input: {
 		projectName: {
 			msg: "What is your project name?",
-			default: function(params, callback)
-			{
+			default: function(params, callback)	{ 
+				
 				callback(50);
 			}
 		},
@@ -63,32 +83,70 @@ scaffolding({
 
 ````
 
-### Helpers
 
-#### scaffolding.fromDir(params, src, dest)
+### scaffoldit.fromDir(params, src, dest)
 
 scans the target directory for files, and replaces any template variables with the parameters given. The destination is where the files are written to.
 
 ````javascript
 
-scaffolding({
-	params: {
+scaffoldit({
+	input: {
 		projectName: "What is your project name?"
+	},
+	build: function(ops, next) {
+		
+		scaffoldit.fromDir(ops, '/path/to/input/dir','/path/to/output/dir');
+	},
+	complete: function() {
+		//...
 	}
 })
 
 ````
 
-Or if your lazy like me, you can do something like this:
+Or you can do something like this:
 
 
-scaffolding({
-	input: {
-		projectName: "What is your project name?",
-		_src: "Where is your project located?",
-		_dest: "Where do you want to write the project to?",
+scaffoldit({
+	params: {
+		'_src': '/path/to/input/dir',
+		'_dest': '/path/to/output/dir'
 	},
-	build: scaffolding.fromDir
-})
+	input: {
+		projectName: "What is your project name?"
+	},
+	build: scaffoldit.fromDir,
+	complete: function() {
+		//...
+	}
+});
+
+### scaffoldit.fromFile(params, templateSrc, callback)
+
+loads the target template file and fills it with the parameters given.
+
+````javascript
+
+scaffoldit({
+	input: {
+		name: {
+			msg: "What's your name?",
+			default: "Craig"
+		},
+		_src: {
+			msg: "Where is the template?",
+			default: "/path/to/template.file"
+		},
+		build: scaffoldit.fromFile,
+		complete: function(err, content) {
+			
+			console.log(content);
+		}
+
+	}
+});
+
+````
 
 

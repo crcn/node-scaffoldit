@@ -1,0 +1,9 @@
+hello {{name}}! 
+
+{{#hasDog}}
+You have a dog.
+{{/hasDog}}
+
+{{^hasDog}}
+You do NOT have a dog. 
+{{/hasDog}}
