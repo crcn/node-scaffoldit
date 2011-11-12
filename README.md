@@ -1,6 +1,6 @@
 
 
-[!Alt example](http://i.imgur.com/3Q9Fa.png)
+![Alt example](http://i.imgur.com/3Q9Fa.png)
 
 
 ### Example
