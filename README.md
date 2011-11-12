@@ -69,6 +69,7 @@ Options include:
 	- `[param_name]` - The parameter name for the given input.
 		- `msg` - The message to display to the user.
 		- `default` - The optional default value to use for the param. Can be a value, or callback.
+		- `type` - Optional param for the type of input.
 - `build` - The build function for the parameters given.
 - `complete` - Called once the build is complete.
 
