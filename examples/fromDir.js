@@ -3,22 +3,19 @@ require('colors');
 
 scaffoldit({
 	params: {
-		'_src': __dirname + '/tpl/hello.tpl.txt'
+		'_src': __dirname + '/tpl/',
+		'_dest': __dirname + '/out/'
 	},
 	input: {
-		'name': {
+		'name':  {
 			msg: 'What is your name?',
 			value: 'Craig'
 		},
 		'hasDog': '(confirm) Do you have a dog?'
 	},
-	build: function(ops, next) {
-		console.log('Building template...'.grey);
-		
-		scaffoldit.fromFile(ops, next);
-	},
+	build: scaffoldit.fromDir,
 	complete: function(err, result) {
 		
-		console.log(result.green);
+		console.log("DONE")
 	}
 });
