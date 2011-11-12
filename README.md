@@ -1,28 +1,35 @@
 
+
+[!Alt example](http://i.imgur.com/3Q9Fa.png)
+
+
 ### Example
 
 ```javascript
 
-var scaffoldit = require('scaffoldit');
-
+var scaffoldit = require('../');
 
 scaffoldit({
+	params: {
+		'_src': __dirname + '/tpl/hello.txt'
+	},
 	input: {
-		name: "What is your name?",
-		address: "What is your address?",
-		hasDog: "(confirm) Do you have a dog?"
+		'name': 
+		{
+			msg: 'What is your name?',
+			value: 'Craig'
+		},
+		'hasDog': '(confirm) Do you have a dog?'
 	},
 	build: function(ops, next)
 	{
-		console.log(ops.name);
-		console.log(ops.address);
-		console.log(ops.hasDog);//true
+		console.log('Building template...');
 		
-		next();
+		scaffoldit.fromFile(ops, next);
 	},
-	complete: function()
-	{
+	complete: function(err, result) {
 		
+		console.log(result)
 	}
 });
 

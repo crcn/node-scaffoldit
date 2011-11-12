@@ -17,7 +17,9 @@
 	  "findit":"*",
 	  "mkdirp": "*"
    },
-  "devDependencies": {},
+  "devDependencies": {
+	  "colors":"*"
+  },
   "main": "./lib/index.js"
   
 }

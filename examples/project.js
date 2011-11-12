@@ -1,4 +1,5 @@
 var scaffoldit = require('../');
+require('colors');
 
 scaffoldit({
 	params: {
@@ -8,20 +9,18 @@ scaffoldit({
 		'name': 
 		{
 			msg: 'What is your name?',
-			value: function(ops, callback)
-			{
-				//sim async
-				setTimeout(function()
-				{
-					callback('Craig');
-				}, 500);
-			}
+			value: 'Craig'
 		},
 		'hasDog': '(confirm) Do you have a dog?'
 	},
-	build: scaffoldit.fromFile,
+	build: function(ops, next)
+	{
+		console.log('Building template...'.grey);
+		
+		scaffoldit.fromFile(ops, next);
+	},
 	complete: function(err, result) {
 		
-		console.log(result)
+		console.log(result.green);
 	}
-})
+});
