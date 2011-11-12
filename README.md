@@ -7,6 +7,7 @@ A library which allows to you very easily take input from a user, and use that d
 ```javascript
 
 var scaffoldit = require('../');
+require('colors');
 
 scaffoldit({
 	params: {
@@ -21,13 +22,13 @@ scaffoldit({
 	},
 	build: function(ops, next) {
 		
-		console.log('Building template...');
+		console.log('Building template...'.grey);
 		
 		scaffoldit.fromFile(ops, next);
 	},
 	complete: function(err, result) {
 		
-		console.log(result)
+		console.log(result.green);
 	}
 });
 
@@ -134,6 +135,7 @@ scaffoldit({
 });
 
 ````
+
 
 ### scaffoldit.fromFile(params, templateSrc, callback)
 
