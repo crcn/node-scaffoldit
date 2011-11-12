@@ -13,15 +13,14 @@ scaffoldit({
 		'_src': __dirname + '/tpl/hello.txt'
 	},
 	input: {
-		'name': 
-		{
+		'name': {
 			msg: 'What is your name?',
 			value: 'Craig'
 		},
 		'hasDog': '(confirm) Do you have a dog?'
 	},
-	build: function(ops, next)
-	{
+	build: function(ops, next) {
+		
 		console.log('Building template...');
 		
 		scaffoldit.fromFile(ops, next);
