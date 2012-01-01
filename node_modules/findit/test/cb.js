@@ -2,6 +2,13 @@ var assert = require('assert');
 var path = require('path');
 var find = require('../');
 
+path.relative = path.relative || function (base, dir) {
+    return dir.indexOf(base + '/') === 0
+        ? dir.slice(base.length + 1)
+        : dir
+    ;
+};
+
 exports.cbSync = function () {
     var files = [];
     var dirs = [];

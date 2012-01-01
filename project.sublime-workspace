@@ -1,0 +1,273 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/tmp/subl stdin 9IenKa.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Make",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Jobs/elgato/private/elgatokb/package.json",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Jobs/elgato/private/elgatokb/src/cli/plugins/product.add.js",
+		"/Users/craig/Downloads/DBServer_20101230_235907_cloudserver388113.yml",
+		"/tmp/subl stdin 4F6IYf.txt",
+		"/Volumes/minimac/Users/craig/Dropbox/Developer/Jobs/elgato/private/elgatokb/project.sublime-project",
+		"/tmp/subl stdin rD3i3z.txt",
+		"/tmp/subl stdin LYutco.txt",
+		"/tmp/subl stdin JykC4Y.txt",
+		"/tmp/subl stdin Ke3pTt.txt",
+		"/Users/craig/.cupboard/projects/teamdigest/lib/front/shared/beans/teamdigest.creation/index.js",
+		"/Users/craig/.cupboard/projects/teamdigest/lib/front/node_modules/malt/lib/core/models/abstract.js",
+		"/Users/craig/.cupboard/projects/teamdigest/lib/front/node_modules/malt/lib/core/models/remote.js",
+		"/Users/craig/.cupboard/projects/teamdigest/lib/front/node_modules/malt/lib/core/models/collection.js",
+		"/Users/craig/.cupboard/projects/teamdigest/lib/front/node_modules/malt/lib/core/models/concrete.js",
+		"/Users/craig/.cupboard/projects/teamdigest/node_modules/spice.io/beans/auth.profile/index.js",
+		"/Users/craig/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/tmp/subl stdin qOmgFT.txt",
+		"/Users/craig/.cupboard/projects/teamdigest/node_modules/leche.spice.io/shared/beans/spice.io.core/models.js"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Volumes/minimac/Users/craig/Dropbox/Developer/Jobs/elgato/private/elgatokb//src/cli/plugins"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"try",
+			"celeri.",
+			"next",
+			"insert",
+			"sql",
+			"dbslayer",
+			"Digest:",
+			"recipients",
+			"specificEmails",
+			"/login",
+			"stat",
+			"find",
+			"store/pr",
+			"rawProfile",
+			"_load",
+			"load",
+			"Profil",
+			"Profile",
+			"args",
+			"--all"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/tmp/subl stdin 9IenKa.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"connect.core/",
+				"node_modules/leche.spice.io/shared/beans/connect.core/index.js"
+			],
+			[
+				"maltmodels",
+				"lib/front/node_modules/malt/lib/core/models/item.js"
+			],
+			[
+				"",
+				"node_modules/leche.spice.io/shared/beans/connect.core/index.js"
+			],
+			[
+				"malt/models",
+				"lib/front/node_modules/malt/lib/core/models/concrete.js"
+			],
+			[
+				"maltabs",
+				"lib/front/node_modules/malt/lib/core/models/abstract.js"
+			],
+			[
+				"maltremo",
+				"lib/front/node_modules/malt/lib/core/models/remote.js"
+			],
+			[
+				"maltcolle",
+				"lib/front/node_modules/malt/lib/core/models/collection.js"
+			],
+			[
+				"maltconcr",
+				"lib/front/node_modules/malt/lib/core/models/concrete.js"
+			],
+			[
+				"maltabst",
+				"lib/front/node_modules/malt/lib/core/models/abstract.js"
+			],
+			[
+				"maltremote",
+				"lib/front/node_modules/malt/lib/core/models/remote.js"
+			],
+			[
+				"leche.spice.iomodel",
+				"node_modules/leche.spice.io/shared/beans/spice.io.core/models.js"
+			],
+			[
+				"spice.ioauthprofileind",
+				"node_modules/spice.io/beans/auth.profile/index.js"
+			],
+			[
+				"spice.iogroups",
+				"node_modules/spice.io/beans/groups.core/index.js"
+			],
+			[
+				"leche.spice.iomode",
+				"node_modules/leche.spice.io/shared/beans/spice.io.core/models.js"
+			],
+			[
+				"leche.spice.ioconne",
+				"node_modules/leche.spice.io/shared/beans/connect.core/index.js"
+			],
+			[
+				"leche.spice.io/beanconnect",
+				"node_modules/leche.spice.io/shared/beans/connect.core/index.js"
+			],
+			[
+				"lechespice.iomodel",
+				"node_modules/leche.spice.io/shared/beans/spice.io.core/models.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true
+}

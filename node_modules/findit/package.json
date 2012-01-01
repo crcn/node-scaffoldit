@@ -1,6 +1,6 @@
 {
     "name" : "findit",
-    "version" : "0.1.1",
+    "version" : "0.1.2",
     "description" : "Walk a directory tree.",
     "main" : "./index.js",
     "dependencies" : {
@@ -9,6 +9,9 @@
     "devDependencies" : {
         "hashish" : ">=0.0.2 <0.1",
         "expresso" : "0.7.x"
+    },
+    "scripts" : {
+        "test" : "expresso"
     },
     "repository" : {
         "type" : "git",
