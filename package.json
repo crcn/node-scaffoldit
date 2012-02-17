@@ -1,21 +1,21 @@
 {
-    "author": "Craig Condon",
-    "name": "scaffoldit",
-    "description": "scaffolding library for node.js",
-    "version": "0.0.2",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/crcn/scaffold.git"
-    },
-    "dependencies": {
-        "mustache": "*",
-        "celeri": "*",
-        "step": "*",
-        "findit": "*",
-        "mkdirp": "*"
-    },
-    "devDependencies": {
-        "colors": "*"
-    },
-    "main": "./lib/index.js"
+  "author": "Craig Condon",
+  "name": "scaffoldit",
+  "description": "scaffolding library for node.js",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crcn/scaffold.git"
+  },
+  "dependencies": {
+    "mustache": "*",
+    "celeri": "*",
+    "step": "*",
+    "findit": "*",
+    "mkdirp": "*"
+  },
+  "devDependencies": {
+    "colors": "*"
+  },
+  "main": "./lib/index.js"
 }
